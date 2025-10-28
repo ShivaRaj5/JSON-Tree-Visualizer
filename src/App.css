@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+.react-flow__node {
+  cursor: pointer;
+}
+
+.react-flow__node:hover {
+  opacity: 0.9;
+}
+
+/* Dark mode overrides for React Flow */
+.dark .react-flow__controls {
+  background: #1f2937;
+}
+
+.dark .react-flow__controls button {
+  background: #374151;
+  color: white;
+  border-color: #4b5563;
+}
+
+.dark .react-flow__controls button:hover {
+  background: #4b5563;
+}
+
+.dark .react-flow__background {
+  background-color: #1f2937;
+}
+
+.dark .react-flow__minimap {
+  background: #1f2937;
+}
