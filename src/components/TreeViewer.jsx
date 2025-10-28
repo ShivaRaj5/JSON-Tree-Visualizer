@@ -15,7 +15,7 @@ const TreeViewer = ({
           type="text"
           value={searchPath}
           onChange={(e) => setSearchPath(e.target.value)}
-          placeholder="S.user.address.city"
+          placeholder="$.user.address.city"
           className={`flex-1 p-2 rounded-lg border-2 ${isDarkMode ? 'bg-gray-800 text-white border-gray-600' : 'bg-white text-gray-900 border-gray-300'}`}
         />
         <button

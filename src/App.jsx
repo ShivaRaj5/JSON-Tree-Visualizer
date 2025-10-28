@@ -15,7 +15,7 @@ function App() {
   const [jsonInput, setJsonInput] = useState(sampleJSON);
   const [jsonData, setJsonData] = useState(null);
   const [error, setError] = useState('');
-  const [searchPath, setSearchPath] = useState('S.user.address.city');
+  const [searchPath, setSearchPath] = useState('$.user.address.city');
   const [searchResult, setSearchResult] = useState(null);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [nodes, setNodes] = useState([]);
@@ -323,7 +323,7 @@ function App() {
     setError('');
     setJsonInput('');
     setSearchResult(null);
-    setSearchPath('S.user.address.city');
+    setSearchPath('');
     setHoveredNode(null);
     setShowCopyMessage(false);
   };
@@ -410,7 +410,7 @@ function App() {
       ctx.strokeStyle = '#94a3b8';
       ctx.lineWidth = 2;
       ctx.font = 'bold 14px Arial';
-      
+
       edges.forEach(edge => {
         const sourceNode = nodes.find(n => n.id === edge.source),
           targetNode = nodes.find(n => n.id === edge.target);
